@@ -1,4 +1,4 @@
-sklearn
+scikit-learn
 matplotlib
 nltk==3.6.7
 gensim==3.8.3
