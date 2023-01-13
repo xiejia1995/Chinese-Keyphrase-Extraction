@@ -95,5 +95,12 @@ def main(arg, data_path, topic_num, top_k, alpha, lambda_, window_size, max_d, p
 
 if __name__ == "__main__":
     args = args()
-    main(algorithms[args.alg], args.data, args.topic_num, args.top_k, args.alpha, args.lambda_, args.window_size,
-         args.max_d, args.plus)
+    main(algorithms[args.alg], 
+         args.data, 
+         args.topic_num, 
+         args.top_k, 
+         args.alpha, 
+         args.lambda_, 
+         args.window_size,
+         args.max_d, 
+         args.plus)
