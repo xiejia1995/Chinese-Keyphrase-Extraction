@@ -28,8 +28,8 @@ for idx, speech in enumerate(speech_list):
     speech_list[idx] = ' '.join([word for word in speech if word.strip() not in stop_words])
 
 
-n_topics = 10   ### 分幾個topics
-n_top_words = 150   ### 顯示topic中多少個字(關鍵字)
+n_topics = 20   ### 分幾個topics
+n_top_words = 50   ### 顯示topic中多少個字(關鍵字)
 
 tf_vectorizer = CountVectorizer(token_pattern='[\u4e00-\u9fff]{2,6}',max_features=500)
 tf = tf_vectorizer.fit_transform(speech_list)
